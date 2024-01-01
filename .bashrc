@@ -1,1 +1,2 @@
-alias vi=nvim
+alias vi=vim
+test -f "$HOME/.cargo/env" && . "$HOME/.cargo/env"
