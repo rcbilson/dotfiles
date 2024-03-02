@@ -7,7 +7,9 @@ set incsearch
 set shiftwidth=8
 set hidden
 
-syn on
+if has("syntax")
+        syn on
+endif
 
 nnoremap <nowait><silent> <C-L> <C-L>:noh<CR>
 
