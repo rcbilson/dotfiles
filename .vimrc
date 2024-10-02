@@ -3,19 +3,25 @@ set autowrite
 set expandtab
 set hlsearch
 set incsearch
-"set re=0
-set shiftwidth=8
+set re=0
+set shiftwidth=2
 set hidden
+set path=.,,./**
 
-if has("syntax")
-        syn on
-endif
+syn on
 
+" normal mode mappings
 nnoremap <nowait><silent> <C-L> <C-L>:noh<CR>
 
-nnoremap _ mz:0,$!goimports<CR>'z
-"set makeprg=go\ test
-nnoremap <F1> :!go doc <cword><CR>
+" insert mode mappings
+inoremap <Tab> <C-T>
+inoremap <S-Tab> <C-D>
 
-inoremap <Tab> <C-t>
-inoremap <S-Tab> <C-d>
+" Go settings
+autocmd FileType go nnoremap _ mz:0,$!goreturns<CR>'z
+autocmd FileType go nnoremap <nowait><silent> = :s;^;//;<CR>:noh<CR>j
+autocmd FileType go nnoremap <nowait><silent> + :s;//;;<CR>:noh<CR>j
+autocmd FileType go vnoremap <nowait><silent> = :s;^;//;<CR>:noh<CR>
+autocmd FileType go vnoremap <nowait><silent> + :s;//;;<CR>:noh<CR>
+autocmd FileType go se shiftwidth=8
+autocmd FileType go se makeprg=go\ test\ -cover
