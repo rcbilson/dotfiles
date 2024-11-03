@@ -25,3 +25,5 @@ autocmd FileType go vnoremap <nowait><silent> = :s;^;//;<CR>:noh<CR>
 autocmd FileType go vnoremap <nowait><silent> + :s;//;;<CR>:noh<CR>
 autocmd FileType go se shiftwidth=8
 autocmd FileType go se makeprg=go\ test\ -cover
+
+autocmd FileType markdown se shiftwidth=4
