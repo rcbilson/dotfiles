@@ -1,4 +1,4 @@
-export PATH=~/go/bin:$PATH
+export PATH=~/bin:~/go/bin:$PATH
 export PS1='\w\n\$ '
 if which vim >/dev/null
 then
