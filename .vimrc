@@ -27,3 +27,5 @@ autocmd FileType go se shiftwidth=8
 autocmd FileType go se makeprg=go\ test\ -cover
 
 autocmd FileType markdown se shiftwidth=4
+
+autocmd FileType python se shiftwidth=4

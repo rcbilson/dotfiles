@@ -6,12 +6,12 @@ typeset +H _return_status="%{$fg_bold[red]%}%(?..⍉)%{$reset_color%}"
 typeset +H _hist_no="%{$fg[grey]%}%h%{$reset_color%}"
 
 PROMPT='
-$(_user_host)${_current_dir} %{$fg[magenta]%}${${${AUVIK_URL#https://}#http://}%.auvik.com}%{$reset_color%}
+$(_user_host)${_current_dir} %{$fg[yellow]%}${AWS_PROFILE} %{$fg[magenta]%}${${${AUVIK_URL#https://}#http://}%.auvik.com}%{$reset_color%}
 %{%(!.${fg[red]}.${fg[white]})%}▶%{$reset_color%} '
 
 PROMPT2='%{%(!.${fg[red]}.${fg[white]})%}◀%{$reset_color%} '
 
-__RPROMPT='$(vi_mode_prompt_info)%{$(echotc UP 1)%}$(_git_time_since_commit) $(git_prompt_status) ${_return_status}%{$(echotc DO 1)%}'
+__RPROMPT='$(vi_mode_prompt_info)%{$(echotc UP 1)%}%{$fg[white]%}$(date)%{$reset_color%} ${_return_status}%{$(echotc DO 1)%}'
 if [[ -z $RPROMPT ]]; then
   RPROMPT=$__RPROMPT
 else
