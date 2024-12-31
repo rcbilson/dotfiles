@@ -54,7 +54,7 @@ key = "G"
 mods = "Command|Shift"
 
 [[keyboard.bindings]]
-chars = "\u0000T"
+chars = "\u0000o"
 key = "J"
 mods = "Command"
 
