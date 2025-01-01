@@ -9,4 +9,4 @@ source /usr/share/bash-completion/completions/fzf
 
 eval "$(zoxide init bash)"
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/dotfiles/.fzf.bash ] && source ~/dotfiles/.fzf.bash

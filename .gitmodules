@@ -4,3 +4,6 @@
 [submodule "oh-my-zsh_custom/plugins/zsh-autosuggestions"]
 	path = oh-my-zsh_custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "fzf"]
+	path = fzf
+	url = https://github.com/junegunn/fzf.git

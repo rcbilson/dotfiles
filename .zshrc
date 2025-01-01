@@ -108,6 +108,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval "$(zoxide init --cmd cd zsh)"
-source <(fzf --zsh)
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/dotfiles/.fzf.zsh ] && source ~/dotfiles/.fzf.zsh
