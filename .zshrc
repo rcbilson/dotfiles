@@ -35,7 +35,7 @@ ZSH_THEME="avit"
 # DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
+DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -63,7 +63,7 @@ ZSH_THEME="avit"
 # HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=$HOME/dotfiles/common/oh-my-zsh_custom
+ZSH_CUSTOM=$HOME/dotfiles/oh-my-zsh_custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -109,3 +109,5 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(zoxide init --cmd cd zsh)"
 source <(fzf --zsh)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

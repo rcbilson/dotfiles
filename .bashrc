@@ -8,3 +8,5 @@ test -f "$HOME/.cargo/env" && . "$HOME/.cargo/env"
 source /usr/share/bash-completion/completions/fzf
 
 eval "$(zoxide init bash)"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

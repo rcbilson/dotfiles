@@ -30,3 +30,5 @@ autocmd FileType markdown se shiftwidth=4
 autocmd FileType markdown nnoremap _ gqip
 
 autocmd FileType python se shiftwidth=4
+
+autocmd FileType javascript se shiftwidth=2
