@@ -7,6 +7,7 @@ set re=0
 set shiftwidth=2
 set hidden
 set path=.,,./**
+set background=dark
 
 syn on
 
@@ -32,3 +33,6 @@ autocmd FileType markdown nnoremap _ gqip
 autocmd FileType python se shiftwidth=4
 
 autocmd FileType javascript se shiftwidth=2
+
+autocmd FileType makefile iunmap <Tab>
+autocmd FileType makefile iunmap <S-Tab>

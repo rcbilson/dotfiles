@@ -213,8 +213,8 @@ x = 14
 y = 10
 
 [colors.primary]
-foreground = "#181818"
-background = "#ffffd0"
+foreground = "#ffffe0"
+background = "#282828"
 
 [general]
 live_config_reload = true
