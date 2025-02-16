@@ -1,0 +1,217 @@
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 10.0
+
+[font.bold]
+family = "DejaVu Sans Mono"
+style = "Heavy"
+
+[font.bold_italic]
+family = "DejaVu Sans Mono"
+style = "Heavy Italic"
+
+[font.italic]
+family = "DejaVu Sans Mono"
+style = "Regular Italic"
+
+[font.normal]
+family = "DejaVu Sans Mono"
+style = "Regular"
+
+[[keyboard.bindings]]
+chars = "\u0000\""
+key = "E"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0000%"
+key = "E"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+chars = """
+lfcd
+"""
+key = "F"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0000[/"
+key = "F"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0000g"
+key = "G"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0000G"
+key = "G"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0000o"
+key = "J"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = """
+:GoToAlt
+"""
+key = "K"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0000L"
+key = "L"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0000T"
+key = "O"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = """
+:GoToFile
+"""
+key = "P"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = """
+:GoToAlt
+"""
+key = "P"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+chars = """
+:q
+"""
+key = "Q"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = """
+\u001B:w
+"""
+key = "S"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0000c"
+key = "T"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0000P"
+key = "T"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0000x"
+key = "W"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0000z"
+key = "Z"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0000n"
+key = "Tab"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u0000,"
+key = "Comma"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u000F"
+key = "LBracket"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0000p"
+key = "LBracket"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+chars = "\t"
+key = "RBracket"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0000n"
+key = "RBracket"
+mods = "Alt|Shift"
+
+[[keyboard.bindings]]
+chars = "\u0000:"
+key = "Semicolon"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00001"
+key = "Key1"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00002"
+key = "Key2"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00003"
+key = "Key3"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00004"
+key = "Key4"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00005"
+key = "Key5"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00006"
+key = "Key6"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00007"
+key = "Key7"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00008"
+key = "Key8"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u00009"
+key = "Key9"
+mods = "Alt"
+
+[window]
+#decorations = "buttonless"
+dynamic_padding = false
+#opacity = 0.9
+
+[window.padding]
+x = 14
+y = 10
+
+[colors.primary]
+foreground = "#ffffe0"
+background = "#282828"
