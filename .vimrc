@@ -25,7 +25,7 @@ autocmd FileType go nnoremap <nowait><silent> + :s;//;;<CR>:noh<CR>j
 autocmd FileType go vnoremap <nowait><silent> = :s;^;//;<CR>:noh<CR>
 autocmd FileType go vnoremap <nowait><silent> + :s;//;;<CR>:noh<CR>
 autocmd FileType go se shiftwidth=8
-autocmd FileType go se makeprg=go\ test\ -cover
+autocmd FileType go se makeprg=go\ test\ -short\ -cover
 
 autocmd FileType markdown se shiftwidth=4
 autocmd FileType markdown nnoremap _ gqip
@@ -33,6 +33,8 @@ autocmd FileType markdown nnoremap _ gqip
 autocmd FileType python se shiftwidth=4
 
 autocmd FileType javascript se shiftwidth=2
+autocmd FileType typescript se shiftwidth=2
+autocmd FileType typescriptreact se shiftwidth=2
 
 autocmd FileType makefile iunmap <Tab>
 autocmd FileType makefile iunmap <S-Tab>
