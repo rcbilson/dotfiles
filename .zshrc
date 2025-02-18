@@ -110,3 +110,6 @@ source $ZSH/oh-my-zsh.sh
 eval "$(zoxide init --cmd cd zsh)"
 
 [ -f ~/dotfiles/.fzf.zsh ] && source ~/dotfiles/.fzf.zsh
+
+set -o no_share_history
+set -o vi
