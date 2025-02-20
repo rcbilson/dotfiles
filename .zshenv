@@ -68,3 +68,10 @@ tn() {
 fix_alacritty() {
   xattr -dr com.apple.quarantine "/Applications/Alacritty.app"
 }
+
+pull_dotfiles() {
+  cd ~/dotfiles
+  git pull --ff-only
+  tmux source .tmux.conf
+  cd -
+}
