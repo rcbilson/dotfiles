@@ -11,7 +11,7 @@ $(_user_host)${_current_dir} %{$fg[yellow]%}${AWS_PROFILE+🅰 }${AWS_PROFILE}%{
 
 PROMPT2='%{%(!.${fg[red]}.${fg[white]})%}◀%{$reset_color%} '
 
-__RPROMPT='$(vi_mode_prompt_info)%{$(echotc UP 1)%}%{$fg[white]%}$(date)%{$reset_color%} ${_return_status}%{$(echotc DO 1)%}'
+__RPROMPT='$(vi_mode_prompt_info)%{$(echotc UP 1)%}%{$fg[white]%}$(date -R)%{$reset_color%} ${_return_status}%{$(echotc DO 1)%}'
 if [[ -z $RPROMPT ]]; then
   RPROMPT=$__RPROMPT
 else
