@@ -66,3 +66,5 @@ autocmd FileType typescriptreact se shiftwidth=2
 
 autocmd FileType makefile iunmap <Tab>
 autocmd FileType makefile iunmap <S-Tab>
+
+let g:vimwiki_list = [{ 'syntax': 'markdown', 'ext': 'md' }]
