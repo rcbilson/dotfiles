@@ -64,15 +64,5 @@ autocmd FileType javascript se shiftwidth=2
 autocmd FileType typescript se shiftwidth=2
 autocmd FileType typescriptreact se shiftwidth=2
 
-autocmd FileType make iunmap <Tab>
-autocmd FileType make iunmap <S-Tab>
-autocmd FileType make set noexpandtab
-
-call plug#begin()
-
-" List your plugins here
-Plug 'vimwiki/vimwiki'
-
-call plug#end()
-
-let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+autocmd FileType makefile iunmap <Tab>
+autocmd FileType makefile iunmap <S-Tab>
