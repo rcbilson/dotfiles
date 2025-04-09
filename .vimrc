@@ -1,3 +1,4 @@
+set nocompatible
 set autoindent
 set autowrite
 set expandtab
@@ -9,6 +10,7 @@ set hidden
 set path=.,,./**
 set background=dark
 
+filetype plugin on
 syn on
 
 if !has('gui_running') && &term =~ '^\%(screen\|tmux\)'
@@ -67,4 +69,5 @@ autocmd FileType typescriptreact se shiftwidth=2
 autocmd FileType makefile iunmap <Tab>
 autocmd FileType makefile iunmap <S-Tab>
 
-let g:vimwiki_list = [{ 'syntax': 'markdown', 'ext': 'md' }]
+let g:vimwiki_list = [{ 'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': 'md' }]
+let g:vimwiki_global_ext = 0
