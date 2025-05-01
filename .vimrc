@@ -9,6 +9,7 @@ set shiftwidth=2
 set hidden
 set path=.,,./**
 set background=dark
+set nojoinspaces
 
 filetype plugin on
 syn on
@@ -62,12 +63,17 @@ autocmd FileType markdown nnoremap _ gqip
 
 autocmd FileType python se shiftwidth=4
 
+autocmd FileType haskell se shiftwidth=4
+
 autocmd FileType javascript se shiftwidth=2
 autocmd FileType typescript se shiftwidth=2
 autocmd FileType typescriptreact se shiftwidth=2
 
 autocmd FileType makefile iunmap <Tab>
 autocmd FileType makefile iunmap <S-Tab>
+
+autocmd FileType vimwiki se fo+=a
+autocmd FileType vimwiki se tw=100
 
 let g:vimwiki_list = [{ 'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': 'md' }]
 let g:vimwiki_global_ext = 0
