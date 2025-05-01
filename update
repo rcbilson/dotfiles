@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -ex
+
+git pull --rebase
+git submodule update --init
+mkdir -p bin
+curl "https://s3.amazonaws.com/rcbilson-dist/$(uname -s)/$(uname -m)/calc" --output bin/calc
+chmod +x bin/calc
+tmux source .tmux.conf
