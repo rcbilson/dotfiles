@@ -72,7 +72,6 @@ autocmd FileType typescriptreact se shiftwidth=2
 autocmd FileType makefile iunmap <Tab>
 autocmd FileType makefile iunmap <S-Tab>
 
-autocmd FileType vimwiki se fo+=a
 autocmd FileType vimwiki se tw=100
 
 let g:vimwiki_list = [{ 'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': 'md' }]
