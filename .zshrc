@@ -113,3 +113,5 @@ eval "$(zoxide init --cmd cd zsh)"
 
 set -o no_share_history
 set -o vi
+
+[ -f "/home/richard/.ghcup/env" ] && . "/home/richard/.ghcup/env" # ghcup-env
