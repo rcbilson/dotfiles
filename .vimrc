@@ -1,4 +1,5 @@
 set nocompatible
+set modeline
 set autoindent
 set autowrite
 set expandtab
