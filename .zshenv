@@ -82,3 +82,7 @@ precommit() {
 dlv_test() {
   dlv test -- -test.run "$@"
 }
+
+tkill() {
+  ps aux | grep 'tmux attach' | awk '{print $2}'| xargs kill -HUP
+}
