@@ -7,9 +7,11 @@ set incsearch
 set re=0
 set shiftwidth=2
 set hidden
-set path=.,,./**
+set path+=**
 set background=dark
 set nojoinspaces
+set rtp+=~/dotfiles/fzf
+set makeprg=make\ check
 
 filetype plugin on
 syn on
@@ -44,6 +46,7 @@ endif
 
 " normal mode mappings
 nnoremap <nowait><silent> <C-L> <C-L>:noh<CR>
+nnoremap <ESC>f :FZF<CR>
 
 " insert mode mappings
 inoremap <Tab> <C-T>
@@ -56,7 +59,6 @@ autocmd FileType go nnoremap <nowait><silent> + :s;//;;<CR>:noh<CR>j
 autocmd FileType go vnoremap <nowait><silent> = :s;^;//;<CR>:noh<CR>
 autocmd FileType go vnoremap <nowait><silent> + :s;//;;<CR>:noh<CR>
 autocmd FileType go se shiftwidth=8
-autocmd FileType go se makeprg=go\ test\ -short\ -cover
 
 autocmd FileType markdown se shiftwidth=4
 autocmd FileType markdown nnoremap _ gqip
