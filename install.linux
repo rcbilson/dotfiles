@@ -1,12 +1,12 @@
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-rm .zshrc
-ln -s dotfiles/.zsh* .
-sudo apt install zsh tmux alacritty
+sudo apt install git curl zsh tmux go vim
 cd dotfiles
 git submodule update --init
 cd fzf
 ./install
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
 go install github.com/arl/gitmux@latest
-ln -s dotfiles/alacritty/alacritty.toml .alacritty.toml
 go install github.com/joshmedeski/sesh/v2@latest
+cd
+rm .zshrc
+ln -s dotfiles/.zsh* .
