@@ -12,6 +12,7 @@ set background=dark
 set nojoinspaces
 set rtp+=~/dotfiles/fzf
 set makeprg=make\ check
+set visualbell
 
 filetype plugin on
 syn on
@@ -74,7 +75,7 @@ autocmd FileType typescriptreact se shiftwidth=2
 autocmd FileType makefile iunmap <Tab>
 autocmd FileType makefile iunmap <S-Tab>
 
-autocmd FileType vimwiki se tw=100
+autocmd FileType vimwiki se tw=100 spell spelllang=en_ca
 
 let g:vimwiki_list = [{ 'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': 'md' }]
 let g:vimwiki_global_ext = 0

@@ -1,5 +1,4 @@
-export PATH=~/bin:~/.local/bin:~/dotfiles/bin:~/go/bin:/usr/local/go/bin:$PATH
-export PS1='\w\n\$ '
+export PATH=~/bin:~/.local/bin:~/dotfiles/bin:~/go/bin:~/.npm-global/bin:/usr/local/go/bin:$PATH
 export EDITOR=`which vim`
 export VISUAL=$EDITOR
 
