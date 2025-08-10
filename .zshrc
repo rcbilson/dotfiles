@@ -107,7 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval "$(zoxide init --cmd cd zsh)"
+eval "$(zoxide init --cmd z zsh)"
 
 [ -f ~/dotfiles/.fzf.zsh ] && source ~/dotfiles/.fzf.zsh
 
@@ -115,3 +115,6 @@ set -o no_share_history
 set -o vi
 
 [ -f "/home/richard/.ghcup/env" ] && . "/home/richard/.ghcup/env" # ghcup-env
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
