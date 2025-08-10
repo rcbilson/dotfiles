@@ -1,12 +1,15 @@
-sudo apt install git curl zsh tmux go vim
+sudo apt install git curl zsh tmux vim npm
 cd dotfiles
 git submodule update --init
 cd fzf
 ./install
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+https://go.dev/doc/install
 go install github.com/arl/gitmux@latest
 go install github.com/joshmedeski/sesh/v2@latest
 cd
 rm .zshrc
-ln -s dotfiles/.zsh* .
+ln -s dotfiles/{.vim*,.tmux*,.zsh*} .
+npm config set prefix '~/.local/'
+npm install -g @anthropic-ai/claude-code
