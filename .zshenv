@@ -74,3 +74,11 @@ pull_dotfiles() {
   tmux source .tmux.conf
   cd -
 }
+
+precommit() {
+  git status --porcelain | awk '/\.go$/{print $2}' | xargs goreturns -w
+}
+
+dlv_test() {
+  dlv test -- -test.run "$@"
+}
