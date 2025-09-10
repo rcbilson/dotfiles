@@ -12,6 +12,7 @@ set background=dark
 set nojoinspaces
 set rtp+=~/dotfiles/fzf
 set makeprg=make\ check
+set grepprg=ag
 set visualbell
 set spelllang=en_ca
 
@@ -61,6 +62,7 @@ autocmd FileType go nnoremap <nowait><silent> + :s;//;;<CR>:noh<CR>j
 autocmd FileType go vnoremap <nowait><silent> = :s;^;//;<CR>:noh<CR>
 autocmd FileType go vnoremap <nowait><silent> + :s;//;;<CR>:noh<CR>
 autocmd FileType go se shiftwidth=8
+autocmd FileType go se makeprg=go\ test\ ./...
 
 autocmd FileType markdown se shiftwidth=4
 autocmd FileType markdown nnoremap _ gqip
