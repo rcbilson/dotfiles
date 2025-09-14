@@ -80,6 +80,7 @@ autocmd FileType makefile iunmap <Tab>
 autocmd FileType makefile iunmap <S-Tab>
 
 autocmd FileType vimwiki se tw=100
+autocmd FileType vimwiki se path-=**
 
 let g:vimwiki_list = [{ 'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': 'md' }]
 let g:vimwiki_global_ext = 0
