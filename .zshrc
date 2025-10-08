@@ -107,7 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval "$(zoxide init --cmd z zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 
 [ -f ~/dotfiles/.fzf.zsh ] && source ~/dotfiles/.fzf.zsh
 
