@@ -62,7 +62,7 @@ autocmd FileType go nnoremap <nowait><silent> = :s;^;//;<CR>:noh<CR>j
 autocmd FileType go nnoremap <nowait><silent> + :s;//;;<CR>:noh<CR>j
 autocmd FileType go vnoremap <nowait><silent> = :s;^;//;<CR>:noh<CR>
 autocmd FileType go vnoremap <nowait><silent> + :s;//;;<CR>:noh<CR>
-autocmd FileType go se shiftwidth=8
+autocmd FileType go se shiftwidth=8 noexpandtab
 autocmd FileType go se makeprg=go\ test\ ./...
 
 autocmd FileType markdown se shiftwidth=4
