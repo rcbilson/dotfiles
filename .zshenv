@@ -77,6 +77,7 @@ pull_dotfiles() {
 
 precommit() {
   git status --porcelain | awk '/\.go$/{print $2}' | xargs goreturns -w
+  git status --porcelain | awk '/\.py$/{print $2}' | xargs sed -i -e 's/ *$//'
 }
 
 dlv_test() {
@@ -85,4 +86,12 @@ dlv_test() {
 
 tkill() {
   ps aux | grep 'tmux attach' | awk '{print $2}'| xargs kill -HUP
+}
+
+claude() {
+  SHELL=/bin/bash command claude "$@"
+}
+
+respell() {
+  vim -es -c "mkspell! ~/.vim/spell/en.utf-8.add" -c "q"
 }
