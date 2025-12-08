@@ -13,6 +13,14 @@ kuc() {
     kubectl config use-context $context
 }
 
+kn() {
+    case "x$1" in
+    x) namespace=default ;;
+    *) namespace="$1" ;;
+    esac
+    kubectl config set-context --current --namespace=$namespace
+}
+
 venv() {
     vi ~/.zshenv
     . ~/.zshenv
