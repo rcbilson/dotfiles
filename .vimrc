@@ -51,6 +51,7 @@ endif
 " normal mode mappings
 nnoremap <nowait><silent> <C-L> <C-L>:noh<CR>
 nnoremap <ESC>f :FZF<CR>
+nnoremap <ESC>g :gr <cword><CR>
 
 " insert mode mappings
 inoremap <Tab> <C-T>
