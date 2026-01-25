@@ -85,3 +85,11 @@ autocmd FileType vimwiki se path-=**
 
 let g:vimwiki_list = [{ 'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': 'md' }]
 let g:vimwiki_global_ext = 0
+
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> <Esc>h :<C-U>TmuxNavigateLeft<cr>
+nnoremap <silent> <Esc>j :<C-U>TmuxNavigateDown<cr>
+nnoremap <silent> <Esc>k :<C-U>TmuxNavigateUp<cr>
+nnoremap <silent> <Esc>l :<C-U>TmuxNavigateRight<cr>
+nnoremap <silent> <Esc>; :<C-U>TmuxNavigatePrevious<cr>
