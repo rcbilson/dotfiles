@@ -21,6 +21,11 @@ kn() {
     kubectl config set-context --current --namespace=$namespace
 }
 
+kl() {
+    app="$1"
+    shift && kubectl logs -l app="$app" "$@"
+}
+
 venv() {
     vi ~/.zshenv
     . ~/.zshenv
