@@ -57,6 +57,10 @@ nnoremap <ESC>g :gr <cword><CR>
 inoremap <Tab> <C-T>
 inoremap <S-Tab> <C-D>
 
+" abbreviations
+iabbr <expr> thed strftime("%Y-%m-%d")
+iabbr <expr> thet strftime("%H:%M")
+
 " Go settings
 autocmd FileType go nnoremap _ mz:0,$!goreturns<CR>'z
 autocmd FileType go nnoremap <nowait><silent> = :s;^;//;<CR>:noh<CR>j
