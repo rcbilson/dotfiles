@@ -13,3 +13,27 @@ rm .zshrc
 ln -s dotfiles/{.vim*,.tmux*,.zsh*} .
 npm config set prefix '~/.local/'
 npm install -g @anthropic-ai/claude-code
+
+cat > /etc/X11/xorg.conf.d/01-pointer.conf << EOF
+Section "InputClass"
+    Identifier "touchpad"
+    MatchIsTouchpad "on"
+    Option "Tapping" "on"
+    Option "ClickMethod" "clickfinger"
+    Option "DisableWhileTyping" "on"
+    Option "MiddleEmulation" "on"
+    Option "NaturalScrolling" "on"
+EndSection
+
+Section "InputClass"
+    Identifier "pointer"
+    MatchIsPointer "on"
+    Option "NaturalScrolling" "on"
+EndSection
+
+Section "InputClass"
+    Identifier "system-keyboard"
+    MatchIsKeyboard "on"
+    Option "XkbOptions" "caps:escape"
+EndSection
+EOF
