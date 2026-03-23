@@ -1,3 +1,4 @@
 bin/calc
 *.swp
 .vim/.netrwhist
+.worktrees
