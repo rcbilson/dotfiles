@@ -60,6 +60,7 @@ vil() {
 vif() {
   fzf --walker=file --bind "enter:become(vim {})"
 }
+bindkey -s '\ef' 'vif^M'
 
 vig() {
   vi $(ag  "$@" | fzf | awk -F: '{ print $1, "+" $2 }')
