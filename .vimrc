@@ -1,6 +1,7 @@
 set nocompatible
 set modeline
 set autoindent
+set autoread
 set autowrite
 set expandtab
 set hlsearch
