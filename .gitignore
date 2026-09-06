@@ -2,3 +2,4 @@ bin/calc
 *.swp
 .vim/.netrwhist
 .worktrees
+.claude/settings.local.json
