@@ -8,7 +8,7 @@ alias k='kubectl'
 kuc() {
     case "x$1" in
     x) context=docker-desktop ;;
-    *) context="$1.knilson.org" ;;
+    *) context="$1" ;;
     esac
     kubectl config use-context $context
 }
@@ -108,4 +108,8 @@ claude() {
 
 respell() {
   vim -es -c "mkspell! ~/.vim/spell/en.utf-8.add" -c "q"
+}
+
+clip() {
+  xclip -selection clipboard
 }
